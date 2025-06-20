@@ -1,7 +1,12 @@
 public class Cat
 {
-    public Cat()
+    private String catName;
+    private int catAge;
+
+    public Cat(String name, int age)
     {
-        System.out.println("Miaou, I'm a cat " + this);
+        this.catName = name;
+        this.catAge = age;
+        System.out.println(catName + " -> " + catAge + " years old");
     }
 }

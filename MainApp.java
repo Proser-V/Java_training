@@ -17,11 +17,22 @@ public class MainApp
     {
         final String myName = "Proser-V";
         int myAge = 35;
-        final String myTaste = "I love coding with java !";
-        System.out.println("Hello world!" + " I'm " + myName + ". I'm " + myAge + ", and " + myTaste);
+        myPresentation(myName, myAge);
+        System.out.println("");
+        playWithCats();
+    }
 
+    public static void myPresentation(String name, int age)
+    {
+        final String myTaste = "I love coding with java !";
+        System.out.println("Hello world!" + " I'm " + name + ". I'm " + age + ", and " + myTaste);
+    }
+
+    public static void playWithCats()
+    {
         System.out.println("I'm now playing with cats :");
-        Cat cat1 = new Cat();
-        Cat cat2 = new Cat();
+        Cat cat1 = new Cat("Scarlett", 9);
+        Cat cat2 = new Cat("Pô", 2);
+        Cat cat3 = new Cat("Tô", 3);
     }
 }
